@@ -582,7 +582,6 @@ input:focus {
     background-image: radial-gradient(var(--clr-text-2), var(--clr-background-dark));
     & .list {
         width: min(var(--content-width), 90vw);
-        margin: auto;
         height: 100%;
         position: relative;
         & .item {
@@ -616,8 +615,8 @@ input:focus {
                 & .category {
                     color: var(--clr-white);
                     z-index: 1;
-			position: absolute;
-			top: 50%;
+                    position: absolute;
+                    top: 50px;
                     text-align: end;
                 }
                 & h2 {
@@ -1154,7 +1153,7 @@ input:focus {
                 & .item{
                     & .content{
                         justify-content: end;
-                        padding-bottom: 100px;
+                        padding-bottom: 50px;
                         right: 10px;
                         & h2{
                             font-size: 5em;
@@ -1204,9 +1203,9 @@ input:focus {
                         & h2{
                             font-size: 4em;
                         }
-			& .description {
-				font-size: 14px;
-			}
+                        & .description {
+                            font-size: 14px;
+                        }
                     }
                     & .more {
                         grid-template-columns: repeat(2, 100px);
@@ -1215,9 +1214,9 @@ input:focus {
                     }
                 }
             }
-		& .indicators {
-			display: none;
-		}
+            & .indicators {
+                display: none;
+            }
         }
     }
     h2{

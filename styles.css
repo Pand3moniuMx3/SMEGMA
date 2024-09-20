@@ -87,7 +87,6 @@ input:focus {
     display: flex;
     flex-direction: column;
     align-items: center;
-    z-index: 2;
     position: absolute;
 }
 .navbar-container-2 {
@@ -96,9 +95,9 @@ input:focus {
     backdrop-filter: var(--glass-backdrop);
     border-bottom: 1px solid var(--clr-white);
     position: fixed;
-    z-index: 1;
     display: flex;
     justify-content: center;
+    z-index: 3;
 }
 .navbar {
     width: 100%;
@@ -136,7 +135,7 @@ input:focus {
     background: var(--glass-background);
     backdrop-filter: var(--glass-backdrop);
     width: 100%;
-    padding: 5rem 1.5rem 3rem 1.5rem;
+    padding: 6rem 1.5rem 3rem 1.5rem;
 
     display: flex;
     flex-direction: column;
@@ -144,6 +143,7 @@ input:focus {
 
     top: -200%;
     transition: all 0.3s ease-in-out;
+    z-index: 2;
 }
 #mobile-nav.is-active {
     top: 0%; /* Visible when active */
@@ -241,7 +241,7 @@ input:focus {
         background-color: var(--clr-background-dark);
         border-radius: var(--border-radius);
     
-        z-index: 12;
+        z-index: 100;
     }
     .menu-bar {
         width: 20px;
@@ -279,6 +279,7 @@ input:focus {
     pointer-events: none;
 
     transform: translateY(70px);
+    z-index: 1;
 }
 .hero-text div {
     display: flex;
@@ -484,7 +485,7 @@ input:focus {
 
 .banner-container {
     width: 100%;
-    padding-inline: var(--global-padding);
+    z-index: -1;
 }
 .banner {
     height: 100vh;
@@ -493,7 +494,6 @@ input:focus {
     overflow: hidden;
     position: relative;
     margin-inline: auto;
-    z-index: 0;
 
     display: flex;
     flex-direction: column;
@@ -522,7 +522,6 @@ input:focus {
     mask-image: url(ASSETS/can.png);
     mask-size: auto 100%;
     transition: 0.7s;
-    z-index: 1;
 
     position: absolute;
     left: 50%;
@@ -714,7 +713,7 @@ input:focus {
         left: 50%;
         transform: translate(-50%, -22px);
         pointer-events: none;
-        z-index: 50;
+        z-index: 2;
 
         display: flex;
         justify-content: space-between;

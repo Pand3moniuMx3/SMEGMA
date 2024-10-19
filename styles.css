@@ -583,6 +583,7 @@ input:focus {
         width: min(var(--content-width), 90vw);
         height: 100%;
         position: relative;
+	margin-inline: auto;
         & .item {
             position: absolute;
             inset: 0;
